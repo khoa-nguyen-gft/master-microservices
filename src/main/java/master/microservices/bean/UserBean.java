@@ -9,8 +9,10 @@ public class UserBean {
 	
 	private Date birthDate;
 
-	public UserBean(int id, String name, Date birthDate) {
+	public UserBean(Integer id, String name, Date birthDate) {
 		super();
+		System.out.printf("user bean init id: %d; name: %s; date: %s \n", id, name, birthDate);
+
 		this.id = id;
 		this.name = name;
 		this.birthDate = birthDate;
@@ -39,6 +41,12 @@ public class UserBean {
 	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
 	}
+
+	@Override
+	public String toString() {
+		return "UserBean [id=" + id + ", name=" + name + ", birthDate=" + birthDate + "]";
+	}
+	
 	
 	
 
