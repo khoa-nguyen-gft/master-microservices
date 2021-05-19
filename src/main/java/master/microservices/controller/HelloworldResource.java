@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 import master.microservices.bean.HelloWordBean;
 
 @RestController
-public class HelloworldController {
+public class HelloworldResource {
 
     
     @GetMapping(path = "/hello-bean")
